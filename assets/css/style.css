@@ -4,11 +4,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+	
 }
 
 * {
 	font-family: 'Inter';
 	font-style: normal;
+	cursor: url('/assets/images/icones/cursor_arrow_24.png'), auto;
 }
 
 header {
@@ -228,7 +230,7 @@ main {
 
 #contact {
 	margin: auto;
-	background-color: #D8D3A8 ;
+	background-color: #bbbbb8 ;
 	position: relative;
 	padding-inline: 100px;
 	padding-block: 100px;
@@ -299,11 +301,10 @@ input[type="submit"] {
     flex-wrap: wrap;
 }
 .icon {
-   cursor: pointer;
-   /* height: 4em; */
+	cursor: url('/assets/images/icones/cursor_hand_24.png'), auto;
 }
 .icon:hover {
-    filter: invert(50%) brightness(70%); 
+    filter: invert(50%) brightness(70%);
 }
 
 /* Styles pour le contenu de texte caché */
