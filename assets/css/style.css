@@ -10,7 +10,7 @@ body {
 * {
 	font-family: 'Inter';
 	font-style: normal;
-	cursor: url('/assets/images/icones/cursor_arrow_24.png'), auto;
+	cursor: url('/assets/images/icones/cursor_arrow.webp'), auto;
 }
 
 header {
@@ -299,12 +299,50 @@ input[type="submit"] {
     display: flex;
     gap: 1em;
     flex-wrap: wrap;
+	justify-content: space-evenly;
 }
-.icon {
-	cursor: url('/assets/images/icones/cursor_hand_24.png'), auto;
+.icon, .nav a {
+	cursor: url('/assets/images/icones/cursor_hand.webp'), auto;
 }
 .icon:hover {
     filter: invert(50%) brightness(70%);
+}
+
+.projects_articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	/* gap: 20px; */
+	column-gap: 70px;
+    row-gap: 50px;
+}
+
+.projects_article {
+    width: 800px;
+	background-color: #ffffff;
+	position: relative; /* Référence pour la position absolue */
+            
+}
+
+.article_picture{
+	width: inherit;
+	border: #c7c7c7 solid; /* #c7c7c7*/
+}
+.article_picture:hover {
+	filter: brightness(98%);
+	cursor: url('/assets/images/icones/cursor_eye.webp'), auto;
+	border: #494646 solid; /* #494646*/
+}
+.pin_icon {
+	position: absolute;
+	top: -127px;
+    right: 250px;
+    width: 250px;
+	z-index: 10;
+}
+.article_text h3 {
+    font-size: 35px;
+	margin: unset;
 }
 
 /* Styles pour le contenu de texte caché */
